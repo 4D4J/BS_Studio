@@ -4,7 +4,6 @@
 h1{
     display: flex;
     justify-content: center;
-
 }
 h2{
     display: flex;
@@ -16,13 +15,21 @@ h2{
 }
 .credit, .icon_insta{
     display: flex;
-    justify-content: flex-end;
-    margin-bottom: -120px;
+    justify-content: right;
+    position: relative;
+    right: 10px;
+    bottom: -50px;
+    height: 0px;
+}
+.credit, .join{
+    position: relative;
+    bottom: -5px;
+    right: 10px;
+    font-size: x-large;
 }
 a{
     text-decoration: none;
     color: black;
-
 }
 .credit{
     display: flex;
@@ -43,8 +50,39 @@ body{
     justify-content: right;
     margin-top: -125px;
     margin-right: 20px;
-    border-radius: 10px;
 }
+#searchbar{
+    border-radius: 10px;
+    height: 35px;
+    width: 150px;
+    
+}
+input[type=text] {
+    width: 30%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+}
+input[type=text]:focus {
+    width: 70%;
+}
+#list{
+    font-size:  1.5em;
+    margin-left: 90px;
+}
+.sneaker{
+    display: none;    
+}
+.tooTop{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    font-size: x-large;
+    bottom: 36.5px;
+    height: 0px;
+
+}
+
+
 
 
 
