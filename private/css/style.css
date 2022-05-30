@@ -13,28 +13,18 @@ h2{
     display: flex;
     justify-content: left;
 }
-.credit, .icon_insta{
-    display: flex;
-    justify-content: right;
-    position: relative;
-    right: 10px;
-    bottom: -50px;
-    height: 0px;
-}
-.credit, .join{
+.join{
     position: relative;
     bottom: -5px;
     right: 10px;
     font-size: x-large;
 }
-a{
+.link_git{
     text-decoration: none;
     color: black;
 }
-.credit{
-    display: flex;
-    justify-content: center; 
-    margin-top: 100px;
+.link_git:hover{
+    color: rgb(95, 186, 183);
 }
 body{
     font-family: 'Roboto Mono', monospace;
@@ -72,16 +62,32 @@ input[type=text]:focus {
 .sneaker{
     display: none;    
 }
-.tooTop{
-    display: flex;
-    justify-content: left;
+.img_Footer{
     position: relative;
-    font-size: x-large;
-    bottom: 36.5px;
-    height: 0px;
-
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    top: 180px;
 }
 
+.logo_arrow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+}
+.logo{
+    position: relative;
+    display: flex;    
+    justify-content: left;
+}
+.credit{
+    position: relative;
+    font-size: x-large;
+    display: flex;
+    justify-content: center; 
+    padding-top: 55px;
+}
 
 
 
@@ -114,7 +120,7 @@ input[type=text]:focus {
     border-radius:20px 20px 00;
 }
 .article-card{
-    background:white;
+    background:rgb(231, 231, 231);
     width:500px;
     height: auto;
     border-radius:20px;
