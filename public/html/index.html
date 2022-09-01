@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="/public/img/logo.png" class="onglet">
     <link rel="stylesheet" href="/private/css/style.css">
+    <link rel="stylesheet" href="/private/css/tracker.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -13,6 +14,10 @@
 
 
 <body>
+    <div class="tracker">
+        <!-- none -->
+    </div>
+
     <header id="top">
         <div class="top">
             <img src="/public/img/logo.png" class="icon">
@@ -62,12 +67,12 @@
             <div class="article-container">
                 <article class="article-card" id="a" >
                     <figure class="article-image">
-                        <img src="../img/nikeAirJordan1WhiteBlack.jpg"alt="Jd1WandB" />
+                        <img src="../img/nikeAirJordan1WhiteBlack.jpg" alt="Jd1WandB" id="imgJWB"/>
                     </figure>
                     <div class="article-content" >
                         <a href="#" class="card-category"> Jordan 1 White and Black </a>
-                        <a class="flèche-d" id="d"><img src="../img/arrow-removebg-preview-droite.png" height="40px"></a>
-                        <a class="flèche-g" id="g"><img src="../img/arrow-removebg-preview-gauche.png" height="40px"></a>
+                        <a class="flèche-d" id="d"><img src="../img/arrow-removebg-preview-droite.png" height="40px" onclick="imgJWB()" id="imgJWB" class="oulaoula"></a>
+                        <a class="flèche-g" id="d"><img src="../img/arrow-removebg-preview-gauche.png" height="40px"></a>
                         <h3 class="card-title">New pattern / catching the soul of the 85'</h3>
                         <p class="card-excerpt">Lorem ipsum dolor sit amet,consectetur
                         adipiscing elit.Nulla feugiat sapien blandit nunc elementum dapibus.
@@ -173,6 +178,8 @@
         </footer>
 
     <script src="../js/search_sneaker.js"></script>
+    <script src="../js/swichImage.js"></script>
+    <script src="../js/pointer.js"></script>
 
 </body>
 

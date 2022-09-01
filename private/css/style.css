@@ -1,3 +1,8 @@
+*{
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
 .titre{
     margin-top: 150px;
 }
@@ -34,19 +39,19 @@ body{
     background:#f0f4fb;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
+    scroll-behavior: smooth;
 }
-.search{
+/* .search{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     margin-top: -125px;
     margin-right: 20px;
 }
 #searchbar{
     border-radius: 10px;
     height: 35px;
-    width: 150px;
-    
-}
+    width: 150px;  
+} */
 input[type=text] {
     width: 30%;
     -webkit-transition: width 0.15s ease-in-out;
@@ -62,33 +67,93 @@ input[type=text]:focus {
 .sneaker{
     display: none;    
 }
-.img_Footer{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    /* background-color: red; */
-    top: 180px;
-}
-
-.logo_arrow{
+.div_arrow{
     position: relative;
     display: flex;
     justify-content: center;
-    top: 100px;
+    background-color: green;
+    height: 0px;
+    top: 140px;
 }
 .logo{
     position: relative;
-    display: flex;    
+    display: flex;
     justify-content: left;
+    top: 210px;
+    height: 0;
+    background-color: green;
 }
 .credit{
-    position: relative;
     font-size: x-large;
     display: flex;
     justify-content: center; 
-    padding-top: 55px;
+    padding-top: 192px;
+}
+.tooTop{
+    transition: 0.5s;
 }
 
+.btn{
+    position: relative;
+    display: flex;
+}
+.how a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.how{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    border-radius: 20px;
+    margin-right: 20px;    
+    box-shadow: 00px 5px 5px 0px#6b82a7;
+}
+.créa a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.créa{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-shadow: 00px 5px 5px 0px #a3a3a3;
+}
+nav div .how:hover{
+    box-shadow: 00px 1px 5px 0px#6b82a7;
+    transition: 0.8s;
+}
+nav div .créa:hover{
+    box-shadow: 00px 1px 5px 0px#a3a3a3;
+    transition: 0.8s;
+}
+.pk{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+}
+#how{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 120px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    position: relative;
+    top: 25px;
+}
 
 
 
@@ -128,19 +193,20 @@ input[type=text]:focus {
 
 }
 .article-card:hover{
-    box-shadow:04px 20px 0 rgba(34,68,123,0.2);
+    box-shadow:07.5px 15px 0 rgba(34,68,123,0.2);
     cursor:pointer;
 }
 .article-content{
     padding:2rem;
 }
 .article-content .card-category{
-    font-size:0.875rem;
+    font-size:1.5rem;
     text-transform:uppercase;
     letter-spacing:0.1em;
     font-weight:600;
     color:#6b82a7;
     display:block;
+    text-align: center;
     text-decoration:none;
 }
 .article-content .card-title{
@@ -153,6 +219,39 @@ input[type=text]:focus {
     color:#6b82a7;
     margin:0;
 }
+
+
+/* flèche droite */
+
+.flèche-d{
+    position: relative;
+    display: flex;
+    left: 98%;
+    bottom: 50px;
+    background-color: rebeccapurple;
+    height: 0px;
+}
+.flèche-d:hover{
+
+}
+.flèche-g{
+    position: relative;
+    display: flex;
+    right: 7%;
+    bottom: 50px;
+    background-color: rebeccapurple;
+    height: 0px;
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and(min-width:768px){
     .site-container{
         max-width:608px;
