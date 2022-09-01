@@ -18,6 +18,7 @@
     background: rgb(63, 47, 116);
     border-radius : 50%;
     z-index: 9999;
+    opacity: 90%;
 }
 
 .expand {

@@ -2,7 +2,6 @@
     scroll-behavior: smooth;
     cursor: none;
 }
-
 .titre{
     margin-top: 150px;
 }
@@ -40,26 +39,11 @@ body{
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     scroll-behavior: smooth;
+    width: 100vw;
+    overflow-x: hidden;
 }
-/* .search{
-    display: flex;
-    justify-content: center;
-    margin-top: -125px;
-    margin-right: 20px;
-}
-#searchbar{
-    border-radius: 10px;
-    height: 35px;
-    width: 150px;  
-} */
-input[type=text] {
-    width: 30%;
-    -webkit-transition: width 0.15s ease-in-out;
-    transition: width 0.15s ease-in-out;
-}
-input[type=text]:focus {
-    width: 70%;
-}
+
+
 #list{
     font-size:  1.5em;
     margin-left: 90px;
@@ -122,7 +106,7 @@ input[type=text]:focus {
     display: flex;
     justify-content: right;
     border-radius: 20px;
-    margin-right: 20px;
+    margin-right: 40px;
     box-shadow: 00px 5px 5px 0px #a3a3a3;
 }
 nav div .how:hover{
@@ -174,7 +158,6 @@ nav{
     gap:2rem;
 }
 .article-image{
-    /* width: 50%; */
     margin:0;
     padding:0;
     overflow:hidden;
@@ -190,7 +173,6 @@ nav{
     height: auto;
     border-radius:20px;
     transition:0.3s;
-
 }
 .article-card:hover{
     box-shadow:07.5px 15px 0 rgba(34,68,123,0.2);
@@ -230,9 +212,6 @@ nav{
     bottom: 50px;
     background-color: rebeccapurple;
     height: 0px;
-}
-.flèche-d:hover{
-
 }
 .flèche-g{
     position: relative;
