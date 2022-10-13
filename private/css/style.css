@@ -1,6 +1,14 @@
+:root{
+    --main-bg-color: #f0f4fb;
+    --bg-color-remixed: #eaecf1;
+}
+
+
 *{
     scroll-behavior: smooth;
     cursor: none;
+    padding: 0;
+    margin: 0;
 }
 .titre{
     margin-top: 150px;
@@ -41,6 +49,7 @@ body{
     scroll-behavior: smooth;
     width: 100vw;
     overflow-x: hidden;
+    overflow-y: visible; 
 }
 
 
@@ -76,11 +85,6 @@ body{
 .tooTop{
     transition: 0.5s;
 }
-
-.btn{
-    position: relative;
-    display: flex;
-}
 .how a{
     text-decoration: none;
     color: black;
@@ -95,20 +99,29 @@ body{
     margin-right: 20px;    
     box-shadow: 00px 5px 5px 0px#6b82a7;
 }
-.créa a{
+.btn{
+    position: relative;
+    display: flex;
+    align-items: left;
+}
+.créa p{
     text-decoration: none;
     color: black;
-    padding: 10px;
+    margin: auto;
 }
 .créa{
-    background-color: white;
+    background: #f0f4fb;
     height: 50px;
+    width: 150px;
     display: flex;
     justify-content: right;
     border-radius: 20px;
-    margin-right: 40px;
+    margin-right: 50px;
     box-shadow: 00px 5px 5px 0px #a3a3a3;
 }
+
+
+
 nav div .how:hover{
     box-shadow: 00px 1px 5px 0px#6b82a7;
     transition: 0.8s;
@@ -139,11 +152,27 @@ nav{
     top: 25px;
 }
 
-
-
-.diapo{
-    overflow: hidden;
+#bgOver{ 
+    width: 100vw;
+    height: 168.37vw;
+    background-color: rgb(15, 15, 15);
+    opacity: 50%;
+    position: absolute;
+    display: none;
 }
+.buyAlert{
+    background-color: var(--bg-color-remixed);
+
+    width: 480px;
+    height: 600px;
+
+    position: absolute;
+
+
+    display: none;
+}
+
+
 
 .site-container{
     padding-top: 300px;
@@ -152,6 +181,11 @@ nav{
 }
 .site-container2{
     padding-top: 80px;
+    margin:2rem auto;
+    max-width:calc(100%80px);
+}
+.site-container3{
+    padding-top: 30px;
     margin:2rem auto;
     max-width:calc(100%80px);
 }
@@ -184,7 +218,6 @@ nav{
 }
 .article-card:hover{
     box-shadow:07.5px 15px 0 rgba(34,68,123,0.2);
-    cursor:pointer;
 }
 .article-content{
     padding:2rem;
@@ -211,8 +244,9 @@ nav{
 }
 
 
-/* flèche droite */
 
+
+/* flèche droite et gauche*/
 .flèche-d{
     position: relative;
     display: flex;
@@ -238,7 +272,7 @@ nav{
 
 
 
-
+/* responsive */
 @media screen and(min-width:768px){
     .site-container{
         max-width:608px;
