@@ -141,6 +141,9 @@ nav{
 
 
 
+.diapo{
+    overflow: hidden;
+}
 
 .site-container{
     padding-top: 300px;
@@ -160,13 +163,18 @@ nav{
 .article-image{
     margin:0;
     padding:0;
-    overflow:hidden;
 }
 .article-image img{
     width:100%;
     height: auto;
     border-radius:20px 20px 00;
 }
+/* .article-image img .second{
+    display: none;
+} */
+
+
+
 .article-card{
     background:rgb(231, 231, 231);
     width:500px;

@@ -16,12 +16,20 @@ const d6 = document.getElementById("d6");
 const g6 = document.getElementById("g6");
 
 
+// detection des autres images
+const img2 = document.querySelector('.first')
+
+
 
 
 
 function imgJWB() {  
     d1.addEventListener ("click", () =>{
-        console.log('flèche droite1 clické')
+        img2.classList.add('second')
+
+
+
+
     })
     g1.addEventListener ("click", () =>{
         console.log('flèche gauche1 clické')
