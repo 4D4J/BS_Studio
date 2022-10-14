@@ -51,6 +51,7 @@ body{
     overflow-x: hidden;
     overflow-y: visible; 
 }
+a{text-decoration: none;}
 
 
 #list{
@@ -85,7 +86,8 @@ body{
 .tooTop{
     transition: 0.5s;
 }
-.how a{
+
+.tp{
     text-decoration: none;
     color: black;
     padding: 10px;
@@ -120,12 +122,36 @@ body{
     box-shadow: 00px 5px 5px 0px #a3a3a3;
 }
 
-
-
-nav div .how:hover{
-    box-shadow: 00px 1px 5px 0px#6b82a7;
-    transition: 0.8s;
+/* bouton payement */
+.all{
+    position: relative;
+    display: flex;
+    top: 250px;
 }
+.btnCmd{
+    position: relative;
+    display: flex;
+    align-items: left;
+}
+.pay p{
+    text-decoration: none;
+    color: black;
+    margin: auto;
+}
+.pay{
+    background: #f0f4fb;
+    height: 70px;
+    width: 215px;
+    display: flex;
+    justify-content: right;
+    border-radius: 50% 20% / 10% 40%;
+    box-shadow: 00px 5px 5px 0px #a3a3a3;
+}   
+
+
+
+
+
 nav div .créa:hover{
     box-shadow: 00px 1px 5px 0px#a3a3a3;
     transition: 0.8s;
@@ -149,16 +175,25 @@ nav div .créa:hover{
 }
 nav{
     position: relative;
-    top: 25px;
 }
-
 #bgOver{ 
     width: 100vw;
-    height: 168.37vw;
+    height: 169.7vw;
     background-color: rgb(15, 15, 15);
     opacity: 50%;
     position: absolute;
     display: none;
+    z-index: 999;
+}
+.alt{
+
+    width: 100vw;
+    height: auto;
+
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
 }
 .buyAlert{
     background-color: var(--bg-color-remixed);
@@ -166,11 +201,17 @@ nav{
     width: 480px;
     height: 600px;
 
-    position: absolute;
-
 
     display: none;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 25px;
+
+    z-index: 1000;
+
 }
+
 
 
 
@@ -252,7 +293,7 @@ nav{
     display: flex;
     left: 98%;
     bottom: 50px;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     height: 0px;
 }
 .flèche-g{
@@ -260,7 +301,7 @@ nav{
     display: flex;
     right: 7%;
     bottom: 50px;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     height: 0px;
 }
 
