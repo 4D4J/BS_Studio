@@ -74,6 +74,7 @@ a{text-decoration: none;}
     display: flex;
     justify-content: left;
     top: 210px;
+    left: 5px;
     height: 0;
     background-color: green;
 }
@@ -122,15 +123,12 @@ a{text-decoration: none;}
     box-shadow: 00px 5px 5px 0px #a3a3a3;
 }
 
-/* bouton payement */
+/* page payment */
+    /* bouton payement */
 .all{
     position: relative;
     display: flex;
     top: 250px;
-}
-.btnCmd{
-    position: relative;
-    display: flex;
     align-items: left;
 }
 .pay p{
@@ -149,33 +147,6 @@ a{text-decoration: none;}
 }   
 
 
-
-
-
-nav div .créa:hover{
-    box-shadow: 00px 1px 5px 0px#a3a3a3;
-    transition: 0.8s;
-}
-.pk{
-    width: 700px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: x-large;
-}
-#how{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 120px;
-}
-.top{
-    display: flex;
-    justify-content: space-between;
-}
-nav{
-    position: relative;
-}
 #bgOver{ 
     width: 100vw;
     height: 169.7vw;
@@ -207,13 +178,96 @@ nav{
     justify-content: center;
 
     border-radius: 25px;
+    
 
     z-index: 1000;
 
 }
 
 
+/* case à remplir */
+.choice{
+    /* background-color: red; */
 
+    height: 70px;
+    width: 215px;
+
+    position: absolute;
+    display: flex;
+
+    top: 150px;
+
+    align-items: center;
+    justify-content: center;
+
+}
+.size{
+    /* background-color: red; */
+
+    height: 70px;
+    width: 215px;
+
+    position: absolute;
+    display: flex;
+
+    top: 280px;
+
+    align-items: center;
+    justify-content: center;
+
+}
+select{
+    border-radius: 20px;
+    border: none;
+ 
+    height: 70px;
+    width: 215px;
+
+    font-size: 20px;
+
+}
+option{ 
+    border: none;
+}
+select:hover{
+    -webkit-box-shadow: 0px 7px 18px -3px rgba(92, 92, 92, 0.77); 
+    box-shadow: 0px 7px 18px -3px rgba(109, 109, 109, 0.77); 
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+nav div .créa:hover{
+    box-shadow: 00px 1px 5px 0px#a3a3a3;
+    transition: 0.8s;
+}
+.pk{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+}
+#how{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 120px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    position: relative;
+}
 
 .site-container{
     padding-top: 300px;
@@ -247,8 +301,6 @@ nav{
 /* .article-image img .second{
     display: none;
 } */
-
-
 
 .article-card{
     background:rgb(231, 231, 231);
